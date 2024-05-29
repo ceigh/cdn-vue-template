@@ -1,10 +1,23 @@
 {
   "scripts": {
+    "postinstall": "yarn simple-git-hooks",
     "dev": "live-server --port=3000 --no-browser ./src"
   },
+  "nano-staged": {
+    "*.{js}": "eslint --fix"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "yarn nano-staged"
+  },
   "devDependencies": {
-    "live-server": "^1.2.2"
+    "@eslint/js": "^9.3.0",
+    "eslint": "^9.3.0",
+    "globals": "^15.3.0",
+    "live-server": "^1.2.2",
+    "nano-staged": "^0.8.0",
+    "simple-git-hooks": "^2.11.1"
   },
   "private": true,
+  "type": "module",
   "packageManager": "yarn@4.2.2"
 }
