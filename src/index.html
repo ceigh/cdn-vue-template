@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta -->
+    <title>Example CDN app</title>
+    <meta name="description" content="Example CDN app">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+
+    <!-- Preloads -->
+    <link rel="preconnect" href="https://esm.sh">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fonts.css">
+
+    <!-- UnoCSS -->
+    <style>[un-cloak] { display: none; }</style>
+    <script src="https://raw.esm.sh/@unocss/runtime@^0.60.3/preset-mini.global.js"></script>
+    <script src="https://raw.esm.sh/@unocss/runtime@^0.60.3/preset-icons.global.js"></script>
+    <script src="./js/uno.config.js"></script>
+    <script src="https://raw.esm.sh/@unocss/runtime@^0.60.3/core.global.js"></script>
+
+    <!-- Modules -->
+    <script type="importmap">
+      {
+        "imports": {
+          "vue": "https://esm.sh/@vue-vapor/vue@^3.0.0/dist/vue.esm-browser.prod.js"
+        }
+      }
+    </script>
+
+    <!-- Init -->
+    <script type="module" src="./js/main.js"></script>
+  </head>
+
+  <body un-cloak>
+    <div id="app"></div>
+  </body>
+</html>

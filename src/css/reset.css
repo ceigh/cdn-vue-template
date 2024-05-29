@@ -1,0 +1,10 @@
+@import "https://esm.sh/@unocss/reset@^0.60.3/sanitize/sanitize.css";
+/* @import "https://esm.sh/@unocss/reset@^0.60.3/sanitize/assets.css"; */
+@import "https://esm.sh/@unocss/reset@^0.60.3/sanitize/forms.css";
+/* @import "https://esm.sh/@unocss/reset@^0.60.3/sanitize/reduce-motion.css"; */
+
+:where(:root) {
+  font-size: 100%;
+  background: #181818;
+  color: #fdfdfd;
+}

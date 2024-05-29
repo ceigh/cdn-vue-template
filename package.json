@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "dev": "live-server --port=3000 --no-browser ./src"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  },
+  "private": true,
+  "packageManager": "yarn@4.2.2"
+}
