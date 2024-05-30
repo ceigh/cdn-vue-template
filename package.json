@@ -1,0 +1,17 @@
+{
+  "devDependencies": {
+    "nano-staged": "^0.8.0",
+    "prettier": "3.2.5",
+    "simple-git-hooks": "^2.11.1"
+  },
+  "prettier": {},
+  "nano-staged": {
+    "*.{html,css,js,json,md}": "prettier --write"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "yarn nano-staged"
+  },
+  "scripts": {
+    "postinstall": "yarn simple-git-hooks"
+  }
+}

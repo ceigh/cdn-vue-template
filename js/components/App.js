@@ -1,9 +1,9 @@
-import { ref } from "vue"
+import { ref } from "vue";
 
 export default {
   setup() {
-    const counter = ref(0)
-    return { counter }
+    const counter = ref(0);
+    return { counter };
   },
 
   template: `
@@ -30,4 +30,4 @@ export default {
       </div>
     </div>
   `,
-}
+};
