@@ -1,4 +1,0 @@
-```sh
-yarn
-yarn dev
-```
