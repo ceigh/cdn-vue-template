@@ -20,7 +20,7 @@ export default {
         <div class="font-size-5">
           Counter: <span>{{ counter }}</span>
         </div>
-        <button 
+        <button
           type="button"
           class="font-size-4 min-h-10.5 p-x-5 rounded-lg border-0 bg-amber text-dark-800 cursor-pointer active:scale-95 transition"
           @click="counter++"
@@ -29,5 +29,5 @@ export default {
         </button>
       </div>
     </div>
-  `
+  `,
 }
