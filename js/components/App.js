@@ -6,7 +6,7 @@ export default {
     return { counter };
   },
 
-  template: `
+  template: /* html */ `
     <div class="flex flex-col gap-4 items-center justify-center p-8 min-h-screen">
       <!-- Icons -->
       <div class="i-uil-spin font-size-8 sm:font-size-14" />
