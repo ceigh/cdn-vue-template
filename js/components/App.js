@@ -1,12 +1,12 @@
-import { ref } from "vue";
+import { defineComponent, ref } from "vue";
 
-export default {
+export default defineComponent({
   setup() {
     const counter = ref(0);
     return { counter };
   },
 
-  template: /* html */ `
+  template: /* vue */ `
     <div class="flex flex-col gap-4 items-center justify-center p-8 min-h-screen">
       <!-- Icons -->
       <div class="i-uil-spin font-size-8 sm:font-size-14" />
@@ -30,4 +30,4 @@ export default {
       </div>
     </div>
   `,
-};
+});
