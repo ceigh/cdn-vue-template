@@ -1,6 +1,7 @@
 {
   "scripts": {
-    "postinstall": "pnpm simple-git-hooks"
+    "postinstall": "simple-git-hooks",
+    "format": "prettier **/*.{html,css,js,json,md} --write"
   },
   "devDependencies": {
     "nano-staged": "^0.8.0",
