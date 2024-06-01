@@ -35,6 +35,9 @@ importers:
       vue:
         specifier: ^3.0.0
         version: 3.4.27(typescript@5.4.5)
+      watchlist:
+        specifier: ^0.3.1
+        version: 0.3.1
 
 packages:
 
@@ -1043,6 +1046,11 @@ packages:
     peerDependenciesMeta:
       typescript:
         optional: true
+
+  watchlist@0.3.1:
+    resolution: {integrity: sha512-m5r4bzxJ9eg07TT/O0Q49imFPD45ZTuQ3kaHwSpUJj1QwVd3pzit4UYOmySdmAP5Egkz6mB6hcAPuPfhIbNo0g==}
+    engines: {node: '>=8'}
+    hasBin: true
 
   websocket-driver@0.7.4:
     resolution: {integrity: sha512-b17KeDIQVjvb0ssuSDF2cYXSg2iztliJ4B9WdsuB6J952qCPKmnVq4DyW5motImXHDC1cBT/1UezrJVsKw5zjg==}
@@ -2102,6 +2110,10 @@ snapshots:
       '@vue/shared': 3.4.27
     optionalDependencies:
       typescript: 5.4.5
+
+  watchlist@0.3.1:
+    dependencies:
+      mri: 1.2.0
 
   websocket-driver@0.7.4:
     dependencies:
