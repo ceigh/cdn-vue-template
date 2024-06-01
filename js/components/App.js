@@ -1,9 +1,14 @@
 import { defineComponent, ref } from "vue";
+import { double } from "../utils/double.js";
 
 export default defineComponent({
   setup() {
-    const counter = ref(0);
-    return { counter };
+    const counter = ref(1);
+
+    return {
+      counter,
+      double,
+    };
   },
 
   template: /* vue */ `
@@ -23,9 +28,9 @@ export default defineComponent({
         <button
           type="button"
           class="font-size-4 min-h-10.5 p-x-5 rounded-lg border-0 bg-amber text-dark-800 cursor-pointer active:scale-95 transition"
-          @click="counter++"
+          @click="counter = double(counter)"
         >
-          Add
+          Double
         </button>
       </div>
     </div>
