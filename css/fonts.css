@@ -1,5 +1,0 @@
-@import "https://esm.sh/@fontsource/krona-one@^5.0.13?css";
-
-:where(:root) {
-  font-family: "Krona One", sans-serif;
-}

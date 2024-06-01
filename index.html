@@ -2,8 +2,8 @@
 <html lang="en">
   <head>
     <!-- Meta -->
-    <title>Example CDN app</title>
-    <meta name="description" content="Example CDN app" />
+    <title>Example</title>
+    <meta name="description" content="Example" />
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=5"
@@ -12,27 +12,38 @@
     <!-- Preloads -->
     <link rel="preconnect" href="https://esm.sh" />
     <link rel="preconnect" href="https://raw.esm.sh" />
+    <link rel="preconnect" href="https://api.iconify.design" />
 
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/fonts.css" />
-
-    <!-- UnoCSS -->
+    <link
+      rel="stylesheet"
+      href="https://esm.sh/@fontsource-variable/inter@5.0.18?css"
+    />
+    <link rel="stylesheet" href="https://esm.sh/modern-normalize@2.0.0?css" />
     <style>
+      html {
+        font-family: "Inter Variable", sans-serif;
+        font-size: 100%;
+        background: #1a1a1a;
+        color: #ffffff;
+      }
+
       [un-cloak] {
         display: none;
       }
     </style>
-    <script src="https://raw.esm.sh/@unocss/runtime@^0.60.3/preset-mini.global.js"></script>
-    <script src="https://raw.esm.sh/@unocss/runtime@^0.60.3/preset-icons.global.js"></script>
+
+    <!-- UnoCSS -->
+    <script src="https://raw.esm.sh/@unocss/runtime@0.60.4/preset-mini.global.js"></script>
+    <script src="https://raw.esm.sh/@unocss/runtime@0.60.4/preset-icons.global.js"></script>
     <script src="./js/uno.config.js"></script>
-    <script src="https://raw.esm.sh/@unocss/runtime@^0.60.3/core.global.js"></script>
+    <script src="https://raw.esm.sh/@unocss/runtime@0.60.4/core.global.js"></script>
 
     <!-- Modules -->
     <script type="importmap">
       {
         "imports": {
-          "vue": "https://esm.sh/@vue-vapor/vue@^3.0.0/dist/vue.esm-browser.prod.js"
+          "vue": "https://esm.sh/vue@3.4.27/dist/vue.esm-browser.prod.js"
         }
       }
     </script>

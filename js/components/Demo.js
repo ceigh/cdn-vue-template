@@ -16,18 +16,18 @@ export default defineComponent({
       <!-- Icons -->
       <div class="i-uil-spin font-size-8 sm:font-size-14" />
 
-      <h1 class="m-0 font-size-8 sm:font-size-18 text-center lh-none m-b-4">
-        Example CDN app
+      <h1 class="m-0 font-size-8 sm:font-size-18 fw-800 text-center lh-none m-b-4">
+        Example
       </h1>
 
       <!-- Reactivity -->
       <div class="flex flex-col gap-2 items-center">
-        <div class="font-size-5">
-          Counter: <span>{{ counter }}</span>
-        </div>
+        <code class="font-size-5">
+          {{ counter }}
+        </code>
         <button
           type="button"
-          class="font-size-4 min-h-10.5 p-x-5 rounded-lg border-0 bg-amber text-dark-800 cursor-pointer active:scale-95 transition"
+          class="font-size-4 min-h-10.5 p-x-5 rounded-lg border-0 bg-emerald-500 text-dark-800 cursor-pointer active:scale-95 transition"
           @click="counter = double(counter)"
         >
           Double
