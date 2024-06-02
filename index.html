@@ -8,6 +8,11 @@
       name="viewport"
       content="width=device-width, initial-scale=1, maximum-scale=5"
     />
+    <link rel="icon" href="./img/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="./img/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./img/apple-touch-icon.png" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <meta name="theme-color" content="#040e08" />
 
     <!-- Preloads -->
     <link rel="preconnect" href="https://esm.sh" />
@@ -17,15 +22,22 @@
     <!-- CSS -->
     <link
       rel="stylesheet"
-      href="https://esm.sh/@fontsource-variable/inter@5.0.18?css"
+      href="https://esm.sh/@fontsource-variable/martian-mono@5.0.13?css"
     />
-    <link rel="stylesheet" href="https://esm.sh/modern-normalize@2.0.0?css" />
+    <link
+      rel="stylesheet"
+      href="https://esm.sh/@unocss/reset@0.60.4/sanitize/sanitize.css?css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://esm.sh/@unocss/reset@0.60.4/sanitize/forms.css?css"
+    />
     <style>
       html {
-        font-family: "Inter Variable", sans-serif;
+        font-family: "Martian Mono Variable", monospace;
         font-size: 100%;
-        background: #1a1a1a;
-        color: #ffffff;
+        background: #040e08;
+        color: #e4f3ea;
       }
 
       [un-cloak] {
@@ -40,6 +52,11 @@
     <script src="https://raw.esm.sh/@unocss/runtime@0.60.4/core.global.js"></script>
 
     <!-- Modules -->
+    <!-- Polyfill -->
+    <script
+      async
+      src="https://raw.esm.sh/es-module-shims@1.10.0/dist/es-module-shims.js"
+    ></script>
     <script type="importmap">
       {
         "imports": {

@@ -1,0 +1,14 @@
+{
+  "name": "Example",
+  "short_name": "Example",
+  "description": "Example",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#040e08",
+  "theme_color": "#a7f3d0",
+  "orientation": "portrait",
+  "icons": [
+    { "src": "./img/icon-192.png", "type": "image/png", "sizes": "192x192" },
+    { "src": "./img/icon-512.png", "type": "image/png", "sizes": "512x512" }
+  ]
+}
